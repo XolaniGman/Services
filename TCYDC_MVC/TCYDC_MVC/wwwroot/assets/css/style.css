@@ -26,6 +26,16 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Roboto", sans-serif;
 }
 
+.displaypic {
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
+
+.hide {
+    visibility:hidden;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -60,7 +70,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 80px;
+  height: 100px;
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
@@ -74,7 +84,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 #header.header-scrolled {
   background: rgba(30, 67, 86, 0.8);
-  height: 60px;
+  height: 110px;
   padding: 10px 0;
 }
 
@@ -96,7 +106,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 40px;
+  max-height: 100px;
 }
 
 #main {
