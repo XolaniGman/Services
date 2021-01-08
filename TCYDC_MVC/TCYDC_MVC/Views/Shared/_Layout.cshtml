@@ -43,43 +43,50 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top header-transparent">
         <div class="container">
+            <table>
+                <tr>
+                    <td>
+                        <div class="logo float-left">
+                            @*<h1 class="text-light"><a href="@Url.Action("Index","Home")"><span>Thembalethu</span></a></h1>*@
+                            <!-- Uncomment below if you prefer to use an image logo -->
+                            <a href="@Url.Action("Index","Home")"><img src="~/assets/img/logo/logo.png" width="50%" height="50%" alt="" /></a>
+                        </div>
+                    </td>
 
-            <div class="logo float-left">
-                <h1 class="text-light"><a href="@Url.Action("Index","Home")"><span>Thembalethu</span></a></h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                @*<a href="index.html"><img src="~/assets/img/material/Logo_n.png" width="100%" height="100%" alt="" /></a>*@
-            </div>
-
-            <nav class="nav-menu float-right d-none d-lg-block">
-                <ul>
-                    <li class="active"><a href="@Url.Action("Index","Home")">Home</a></li>
-                    <li><a href="@Url.Action("AboutUs","Home")">About Us</a></li>
-                    <li><a href="@Url.Action("Services","Home")">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li class="drop-down">
-                        <a href="">Drop Down</a>
-                        <ul>
-                            <li><a href="#">Drop Down 1</a></li>
-                            <li class="drop-down">
-                                <a href="#">Drop Down 2</a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Drop Down 3</a></li>
-                            <li><a href="#">Drop Down 4</a></li>
-                            <li><a href="#">Drop Down 5</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav><!-- .nav-menu -->
+                    <td>
+                        <nav class="nav-menu float-right d-none d-lg-block">
+                            <ul>
+                                <li class="active"><a href="@Url.Action("Index","Home")">Home</a></li>
+                                <li><a href="@Url.Action("AboutUs","Home")">About Us</a></li>
+                                <li><a href="@Url.Action("Services","Home")">Services</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <li><a href="team.html">Team</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li class="drop-down">
+                                    <a href="">Drop Down</a>
+                                    <ul>
+                                        <li><a href="#">Drop Down 1</a></li>
+                                        <li class="drop-down">
+                                            <a href="#">Drop Down 2</a>
+                                            <ul>
+                                                <li><a href="#">Deep Drop Down 1</a></li>
+                                                <li><a href="#">Deep Drop Down 2</a></li>
+                                                <li><a href="#">Deep Drop Down 3</a></li>
+                                                <li><a href="#">Deep Drop Down 4</a></li>
+                                                <li><a href="#">Deep Drop Down 5</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Drop Down 3</a></li>
+                                        <li><a href="#">Drop Down 4</a></li>
+                                        <li><a href="#">Drop Down 5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </nav><!-- .nav-menu -->
+                    </td>
+                </tr>
+            </table>
 
         </div>
     </header><!-- End Header -->
