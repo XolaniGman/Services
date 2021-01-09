@@ -43,15 +43,12 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top header-transparent">
         <div class="container">
-            <table>
-                <tr>
-                    <td>
-                        <div class="logo float-left">
-                            @*<h1 class="text-light"><a href="@Url.Action("Index","Home")"><span>Thembalethu</span></a></h1>*@
-                            <!-- Uncomment below if you prefer to use an image logo -->
-                            <a href="@Url.Action("Index","Home")"><img src="~/assets/img/logo/logo.png" width="50%" height="50%" alt="" /></a>
-                        </div>
-                    </td>
+
+            <div class="logo float-left">
+                <h1 class="text-light"><a href="@Url.Action("Index","Home")"><span>Thembalethu</span></a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                @*<a href="index.html"><img src="~/assets/img/material/Logo_n.png" width="100%" height="100%" alt="" /></a>*@
+            </div>
 
             <nav class="nav-menu float-right d-none d-lg-block">
                 <ul>
@@ -59,7 +56,7 @@
                     <li><a href="@Url.Action("AboutUs","Home")">About Us</a></li>
                     <li><a href="@Url.Action("Services","Home")">Services</a></li>
                     <li><a href="@Url.Action("OurFoundation","Home")">Foundation</a></li>
-                    <li><a href="@Url.Action("ServiceExcellence","Home")">Service Excellence</a></li>
+                    <li><a href="@Url.Action("OrganisationCredit","Home")">Credits</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="team.html">Team</a></li>
                     <li><a href="blog.html">Blog</a></li>
@@ -85,18 +82,12 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav><!-- .nav-menu -->
-                </tr>
-            </table>
 
         </div>
     </header><!-- End Header -->
-
-
-   
-
     <!-- ======= Hero Section ======= -->
     @RenderBody()
-
+    
     <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
         <div class="footer-top">
@@ -109,6 +100,7 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="@Url.Action("Index","Home")">Home</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="@Url.Action("AboutUs","Home")">About us</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="@Url.Action("Services","Home")">Services</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="@Url.Action("Team","Home")">Terms of service</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="@Url.Action("Team","Home")">Terms of service</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
                         </ul>
@@ -131,8 +123,7 @@
                             1416 Section C, Ward 10 Next to Osizweni Clinic KWA BOB EZITOLO<br>
                             Osizweni 2952<br>
                             Newcastle Osizweni<br><br>
-                            <strong>Phone:</strong> 071 953 8364 / 079 467 5522 <br>
-                            <strong>Tel:</strong> 034 313 8000 <br>
+                            <strong>Phone:</strong> 071 953 8364<br>
                             <strong>Email:</strong> thembalethucydc@gmail.com<br>
                         </p>
 
