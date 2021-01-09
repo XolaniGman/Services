@@ -45,6 +45,11 @@ namespace TCYDC_MVC.Controllers
             return View();
         }
 
+        public IActionResult ServiceExcellence()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
