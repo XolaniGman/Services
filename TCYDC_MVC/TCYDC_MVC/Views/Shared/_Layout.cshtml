@@ -43,12 +43,15 @@
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top header-transparent">
         <div class="container">
-
-            <div class="logo float-left">
-                <h1 class="text-light"><a href="@Url.Action("Index","Home")"><span>Thembalethu</span></a></h1>
-                <!-- Uncomment below if you prefer to use an image logo -->
-                @*<a href="index.html"><img src="~/assets/img/material/Logo_n.png" width="100%" height="100%" alt="" /></a>*@
-            </div>
+            <table>
+                <tr>
+                    <td>
+                        <div class="logo float-left">
+                            @*<h1 class="text-light"><a href="@Url.Action("Index","Home")"><span>Thembalethu</span></a></h1>*@
+                            <!-- Uncomment below if you prefer to use an image logo -->
+                            <a href="@Url.Action("Index","Home")"><img src="~/assets/img/logo/logo.png" width="50%" height="50%" alt="" /></a>
+                        </div>
+                    </td>
 
             <nav class="nav-menu float-right d-none d-lg-block">
                 <ul>
@@ -82,12 +85,59 @@
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav><!-- .nav-menu -->
+                </tr>
+            </table>
 
         </div>
     </header><!-- End Header -->
+
+
+    <section id="hero" class="d-flex justify-cntent-center align-items-center">
+        <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+                <div class="carousel-container">
+                    <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Thembalethu <br /> Child & Youth Development Centre</span></h2>
+                    <p class="animate__animated animate__fadeInUp">Thembalethu CYDC is an institution that is partnered with the Department of Social Development to offer affordable skills trainings, partnered with the South African Youth Project to offer accredited affordable trainings and programmes to ensure youth development and empowerment.</p>
+              
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <div class="carousel-container">
+                    <h2 class="animate__animated animate__fadeInDown">Service Excellence</h2>
+                    <p class="animate__animated animate__fadeInUp">Our institution excellence acknowledgement by our MEC: Mrs. Weziwe Thusi. We Obtained position: 5. Improvements recommended:  Customer Care, Excellent service provision, Visibility and accessibility.</p>
+                    <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <div class="carousel-container">
+                    <h2 class="animate__animated animate__fadeInDown">Our Foundation</h2>
+                    <p class="animate__animated animate__fadeInUp">Is an organisation that was funded and still monitored by Department of Social Development to mainly offer free/affordable technical skills and contribute towards addressing issues affecting the youth.</p>
+                    <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+        </div>
+    </section>
+
     <!-- ======= Hero Section ======= -->
     @RenderBody()
-    
+
     <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
         <div class="footer-top">
@@ -122,7 +172,8 @@
                             1416 Section C, Ward 10 Next to Osizweni Clinic KWA BOB EZITOLO<br>
                             Osizweni 2952<br>
                             Newcastle Osizweni<br><br>
-                            <strong>Phone:</strong> 071 953 8364<br>
+                            <strong>Phone:</strong> 071 953 8364 / 079 467 5522 <br>
+                            <strong>Tel:</strong> 034 313 8000 <br>
                             <strong>Email:</strong> thembalethucydc@gmail.com<br>
                         </p>
 
