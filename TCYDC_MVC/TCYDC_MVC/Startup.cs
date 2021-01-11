@@ -11,6 +11,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TCYDC_MVC.BusinessLogic;
 using TCYDC_MVC.Data;
 
 namespace TCYDC_MVC
@@ -27,11 +28,24 @@ namespace TCYDC_MVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
+            services.AddControllers();
+            services.AddControllersWithViews();
+            services.AddResponseCompression();
+
+            //Allow CORS from anywhere
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
+
+            services.AddResponseCompression();
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
+                    x => x.MigrationsAssembly("TCYDC_MVC")));
+
+
+            services.AddScoped<IApplicantService, ApplicantService>();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
