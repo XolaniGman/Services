@@ -63,6 +63,10 @@ namespace TCYDC_MVC.Controllers
         {
             return View();
         }
+        public IActionResult Gallary()
+        {
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
